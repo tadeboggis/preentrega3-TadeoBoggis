@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorra y Viaja</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1 id="titulo"><i class="fas fa-plane-departure"></i> Ahorra y Viaja</h1>
+        <nav aria-label="Menú de navegación">
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="#simulador" aria-label="Ir a la sección de simulador"><i class="fas fa-calculator"></i> Simulador</a></li>
+                <li><a href="#resultados" aria-label="Ir a la sección de resultados"><i class="fas fa-chart-line"></i> Resultados</a></li>
+                <li><a href="#contacto" aria-label="Ir a la sección de contacto"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main">
+        <section id="intro">
+            <p>Ahorra y Viaja es tu herramienta ideal para planificar y gestionar tus ahorros de manera eficiente, ayudándote a alcanzar el viaje de tus sueños. Simplemente ingresa tus ingresos, gastos y el costo del viaje, y deja que el simulador haga el resto.</p>
+        </section>
+        <section id="simulador">
+            <h2><i class="fas fa-info-circle"></i> Ingrese sus datos</h2>
+            <form id="formulario-datos" aria-labelledby="titulo">
+                <label for="ingresos"><i class="fas fa-money-bill-wave"></i> Ingresos mensuales:</label>
+                <input type="number" id="ingresos" name="ingresos" placeholder="Ej. 50000" required aria-required="true">
+
+                <label for="gastos"><i class="fas fa-money-bill-wave"></i> Gastos mensuales:</label>
+                <input type="number" id="gastos" name="gastos" placeholder="Ej. 20000" required aria-required="true">
+                
+                <label for="costo"><i class="fas fa-plane"></i> Costo del viaje:</label>
+                <input type="number" id="costo" name="costo" placeholder="Ej. 100000" required aria-required="true">
+                
+                <div class="botones">
+                    <button type="submit"><i class="fas fa-calculator"></i> Calcular</button>
+                    <button type="button" id="resetear"><i class="fas fa-redo"></i> Resetear</button>
+                </div>
+            </form>
+        </section>
+        <section id="resultados">
+            <h2><i class="fas fa-chart-line"></i> Resultados</h2>
+            <div id="resultado" aria-live="polite"></div>
+            <div id="barraProgreso" style="display: none;">
+                <div id="progreso"></div>
+            </div>
+            <table id="tablaAhorro" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Mes</th>
+                        <th>Ahorro Acumulado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Desarrollado por Tadeo</p>
+        <div id="contacto">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
