@@ -34,10 +34,11 @@ function cargarDestinosDesdeJSON() {
             let destinos = data.viajes;
             let destinoSelect = document.getElementById('destino');
             
-            destinos.forEach(destino => {
+            destinos.forEach((destino, index) => {
                 let option = document.createElement('option');
                 option.value = destino.costoPromedio;
                 option.textContent = destino.destino;
+                option.dataset.index = index;
                 destinoSelect.appendChild(option);
             });
 
@@ -54,7 +55,7 @@ function cargarDestinosDesdeJSON() {
                     // Usar el costo predefinido del destino seleccionado
                     document.getElementById('costo').value = selectedOption.value;
                     document.getElementById('costo').disabled = true; // Deshabilitar el campo para evitar modificaciones
-                    let descripcion = destinos[destinoSelect.selectedIndex - 1].descripcion;
+                    let descripcion = destinos[selectedOption.dataset.index].descripcion;  // Usar el índice almacenado para obtener la descripción correcta
                     document.getElementById('descripcionDestino').textContent = descripcion;
                 }
             });
@@ -179,6 +180,18 @@ function mostrarGrafico(ahorroMensual, mesesNecesarios, costo) {
         }
     });
 }
+
+// Evento para cerrar el menú hamburguesa al presionar nuevamente el icono
+document.getElementById('menu-icon').addEventListener('click', function() {
+    const navMenu = document.getElementById('nav-menu');
+    navMenu.classList.toggle('active');
+});
+
+
+
+
+
+
 
 
 
