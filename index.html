@@ -25,11 +25,20 @@
         </nav>
     </header>
     <main role="main">
-        <section id="intro">
-            <p>Ahorra y Viaja es tu herramienta ideal para planificar y gestionar tus ahorros de manera eficiente, ayudándote a alcanzar el viaje de tus sueños. Simplemente ingresa tus ingresos, gastos y el costo del viaje, y deja que el simulador haga el resto.</p>
-        </section>
         <section id="simulador">
+            <h2><i class="fas fa-info-circle"></i> Selecciona un destino</h2>
+            <!-- Select para elegir el destino -->
+            <label for="destino">Destino:</label>
+            <select id="destino" name="destino">
+                <option value="" disabled selected>Selecciona un destino</option>
+                <!-- Opción personalizada -->
+                <option value="personalizado">Personalizado</option>
+            </select>
+            <!-- Texto descriptivo del destino seleccionado -->
+            <p id="descripcionDestino"></p> <!-- Aquí se mostrará la descripción -->
+
             <h2><i class="fas fa-info-circle"></i> Ingrese sus datos</h2>
+            <!-- Formulario para ingresar los datos del usuario -->
             <form id="formulario-datos" aria-labelledby="titulo">
                 <label for="ingresos"><i class="fas fa-money-bill-wave"></i> Ingresos mensuales:</label>
                 <input type="number" id="ingresos" name="ingresos" placeholder="Ej. 50000" required aria-required="true">
@@ -38,7 +47,7 @@
                 <input type="number" id="gastos" name="gastos" placeholder="Ej. 20000" required aria-required="true">
                 
                 <label for="costo"><i class="fas fa-plane"></i> Costo del viaje:</label>
-                <input type="number" id="costo" name="costo" placeholder="Ej. 100000" required aria-required="true">
+                <input type="number" id="costo" name="costo" placeholder="Ej. 100000" required aria-required="true" disabled> 
                 
                 <div class="botones">
                     <button type="submit"><i class="fas fa-calculator"></i> Calcular</button>
@@ -46,6 +55,7 @@
                 </div>
             </form>
         </section>
+
         <section id="resultados">
             <h2><i class="fas fa-chart-line"></i> Resultados</h2>
             <div id="resultado" aria-live="polite"></div>
@@ -62,6 +72,7 @@
                 <tbody>
                 </tbody>
             </table>
+            <canvas id="graficoAhorro" style="display: none;"></canvas>
         </section>
     </main>
     <footer>
@@ -73,8 +84,15 @@
         </div>
     </footer>
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
+
+
+
+
+
+
 
 
 

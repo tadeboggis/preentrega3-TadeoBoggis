@@ -1,0 +1,58 @@
+{
+    "viajes": [
+        {
+            "destino": "Buenos Aires, Argentina",
+            "costoPromedio": 100000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Buenos Aires es de aproximadamente $100.000."
+        },
+        {
+            "destino": "Madrid, España",
+            "costoPromedio": 300000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Madrid es de aproximadamente $300.000."
+        },
+        {
+            "destino": "Nueva York, EEUU",
+            "costoPromedio": 350000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Nueva York es de aproximadamente $350.000."
+        },
+        {
+            "destino": "Tokio, Japón",
+            "costoPromedio": 450000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Tokio es de aproximadamente $450.000."
+        },
+        {
+            "destino": "París, Francia",
+            "costoPromedio": 320000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a París es de aproximadamente $320.000."
+        },
+        {
+            "destino": "Roma, Italia",
+            "costoPromedio": 310000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Roma es de aproximadamente $310.000."
+        },
+        {
+            "destino": "Londres, Reino Unido",
+            "costoPromedio": 400000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Londres es de aproximadamente $400.000."
+        },
+        {
+            "destino": "Sídney, Australia",
+            "costoPromedio": 500000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Sídney es de aproximadamente $500.000."
+        },
+        {
+            "destino": "Dubai, Emiratos Árabes Unidos",
+            "costoPromedio": 450000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a Dubai es de aproximadamente $450.000."
+        },
+        {
+            "destino": "El Cairo, Egipto",
+            "costoPromedio": 280000,
+            "descripcion": "Según las agencias de viajes líderes en el mercado, el costo promedio por persona para un viaje a El Cairo es de aproximadamente $280.000."
+        }
+    ]
+}
+
+
+
+
